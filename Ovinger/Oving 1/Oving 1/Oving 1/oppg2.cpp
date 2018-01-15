@@ -94,15 +94,16 @@ int findGreatestDivisor(int n) {
 
 //b++
 int main() {
-	std::cout << "Oppgave a)" << std::endl;
+	std::cout << "Oppgave a) Storste av to tall" << std::endl;
 	std::cout << max(5, 6) << std::endl;
 	std::cout << "" << std::endl;
 
-	std::cout << "Oppgave c)" << std::endl;
+	std::cout << "Oppgave c) Fibonacci-rekker" << std::endl;
+	std::cout << "Skriver ut fibonaccitall opp til 22. tall: " << std::endl;
 	std::cout << fibonacci(21) << std::endl;
 	std::cout << "" << std::endl;
 
-	std::cout << "Oppgave d)" << std::endl;
+	std::cout << "Oppgave d) 20 Kvadrerte tall og sum av dem " << std::endl;
     squareNumberSum(20);
 	std::cout << "" << std::endl;
 
@@ -110,26 +111,26 @@ int main() {
 	triangleNumbersBelow(27);
 	std::cout << "" << std::endl;
 
-	std::cout << "Oppgave e)" << std::endl;
-	std::cout << isTriangleNumber(15) << std::endl;
-	std::cout << isTriangleNumber(8) << std::endl;
+	std::cout << "Sjekker om triangeltall:" << std::endl;
+	std::cout << "15: " << isTriangleNumber(15) << std::endl;
+	std::cout << "8: " << isTriangleNumber(8) << std::endl;
 	std::cout << "" << std::endl;
 
-	std::cout << "Oppgave f)" << std::endl;
-	std::cout << isPrime(7) << std::endl;
-	std::cout << isPrime(8) << std::endl;
+	std::cout << "Oppgave f) Sjekker om primtall" << std::endl;
+	std::cout << "7: " << isPrime(7) << std::endl;
+	std::cout << "8: " << isPrime(8) << std::endl;
 	std::cout << "" << std::endl;
 
-	std::cout << "Oppgave g)" << std::endl;
+	std::cout << "Oppgave g) Primtall < 32" << std::endl;
 	naivePrimeNumberSearch(32);
 	std::cout << "" << std::endl;
 
-	std::cout << "Oppgave h" << std::endl;
+	std::cout << "Oppgave h) Storste divisor:" << std::endl;
 	std::cout << "Skriv inn et tall: " << std::ends;
 	int theInput = 0;
 	std::cin >> theInput;
 	std::cout << findGreatestDivisor(theInput) << std::ends;
-	std::cout << " er storste divisor for " << theInput << std::endl;
+	std::cout << "er storste divisor for " << theInput << std::endl;
 
 	return 0;
 }
