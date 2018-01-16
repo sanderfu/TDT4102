@@ -86,7 +86,7 @@ int naivePrimeNumberSearch(int n) {
 //h
 int findGreatestDivisor(int n) {
 	for (int divisor = n - 1; divisor > 0; --divisor) {
-		if (n%divisor == 0) {
+		if ( ! (n%divisor)) {
 			return divisor;
 		}
 	}
