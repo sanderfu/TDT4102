@@ -50,21 +50,21 @@ void printHumanReadableTime(int s) {
 }
 
 int main() {
-	//inputAndPrintIntegerer();
+	inputAndPrintIntegerer();
 	
-	/*int number = inputIntegrer();
-	std::cout << "Du skrev: " << number << std::endl;*/
+	int number = inputIntegrer();
+	std::cout << "Du skrev: " << number << std::endl;
 
-	//inputIntegerersAndPrintSum();
+	inputIntegerersAndPrintSum();
 
-	/*for (int i = 10; i < 15; i++) {
+	for (int i = 10; i < 15; i++) {
 		if (isOdd(i)) {
 			std::cout << i << " er et oddetall" << std::endl;
 		}
 		else {
 			std::cout << i << " er et partall" << std::endl;
 		}
-	}*/
+	}
 
 	printHumanReadableTime(10000);
 
