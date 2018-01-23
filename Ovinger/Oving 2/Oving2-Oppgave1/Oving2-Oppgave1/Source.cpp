@@ -22,7 +22,7 @@ void inputIntegerersAndPrintSum() {
 	int number2 = 0;
 	number1 = inputIntegrer(); // Brukte inputIntegerer() fordi denne returnerer input til variabel istedenfor å printe til konsoll
 	number2 = inputIntegrer();
-	std::cout << "Summen av tallene: " << (number1 * number2) << std::endl;
+	std::cout << "Summen av tallene: " << (number1 + number2) << std::endl;
 }
 
 //d
@@ -51,9 +51,6 @@ void printHumanReadableTime(int s) {
 
 int main() {
 	inputAndPrintIntegerer();
-	
-	int number = inputIntegrer();
-	std::cout << "Du skrev: " << number << std::endl;
 
 	inputIntegerersAndPrintSum();
 

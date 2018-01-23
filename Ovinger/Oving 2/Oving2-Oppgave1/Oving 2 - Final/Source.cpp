@@ -124,11 +124,12 @@ void calculateLoanPayments() {
 	}
 }
 
+
 void menu() {
 	setlocale(LC_ALL, "Norwegian");
 	int user = 0;
 	while (user != -1) {
-		std::cout << "\n" << "Velg funkjson:\n" << "0) Avslutt\n" << "1) Summer to tall\n" << "2) Summer flere tall\n" << "3) Konverter NOK til EURO\n" << "4) Multiplikasjonstabell\n" << "5) Finn reelle røtter\n" << "6) Beregn nedbetaling lån\n" <<"Angi valg (0-3): " << std::ends;
+		std::cout << "\n" << "Velg funksjon:\n" << "0) Avslutt\n" << "1) Summer to tall\n" << "2) Summer flere tall\n" << "3) Konverter NOK til EURO\n" << "4) Multiplikasjonstabell\n" << "5) Finn reelle røtter\n" << "6) Beregn nedbetaling lån\n" << "Angi valg (0-3): " << std::ends;
 		std::cin >> user;
 		switch (user) {
 		case 0: user = -1; break;

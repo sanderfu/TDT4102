@@ -9,7 +9,7 @@ int inputIntegrer() {
 	return number;
 }
 
-void inputIntegerersAndPrintSum() {
+void inputIntegerersUsingLoopAndPrintSum() {
 	int amountOfNumbers = 0;
 	int theSum = 0;
 	std::cout << "Hvor mange tall vil du summere:" << std::ends;
@@ -51,9 +51,12 @@ void convCurrency() {
 	//Vi må bruke inputDouble() for ellers vil desimalene i et desimaltall i input forkastes og resultatet blir mindre presist.
 
 int main() {
-	//inputIntegerersAndPrintSum();
+	std::cout << "Deloppgave a) Summering" << std::endl;
+	inputIntegerersUsingLoopAndPrintSum();
 
-	//std::cout << inputDouble() << std::endl;
+	std::cout << "Deloppgave b) inputDouble()" << std::endl;
+	std::cout << inputDouble() << std::endl;
 
+	std::cout << "Deloppgave d) NOK til EUR" << std::endl;
 	convCurrency();
 }
