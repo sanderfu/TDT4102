@@ -1,7 +1,7 @@
 #include <iostream>
+#include <cmath>
 #include "cannonball.h"
 #include "utilities.h"
-#include <cmath>
 
 #define PI 3.14159
 
@@ -94,7 +94,7 @@ void playTargetPractice() {
 	double velocityY = 0;
 	int targetDistance = randomWithLimits(100, 1000);
 	for (int i = 1; i <= 10; i++) {
-		std::cout << "Skriv inn vinkel (i grader) og startfart på følgende format\n"
+		std::cout << "Skriv inn vinkel (i grader) og startfart [m/s] på følgende format\n"
 			<< "vinkel fart" << std::endl;
 		std::cin >> theta >> absVelocity;
 		getVelocityVector(theta, absVelocity, &velocityX, &velocityY);
