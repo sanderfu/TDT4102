@@ -29,6 +29,7 @@ int checkCharacters(char solution[], char guess[]) {
 }
 
 void playMastermind() {
+	std::cout << "Let's play mastermind\nGuess a combination of " << SIZE << " chars: " << std::endl;
 	char code[SIZE+1] = {};
 	char guess[SIZE+1] = {};
 	char run = 'Y';

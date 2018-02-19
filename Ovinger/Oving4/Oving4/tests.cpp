@@ -38,19 +38,22 @@ void testSwapNumbers() {
 
 //task2/3
 void testTableSorting() {
+	std::cout << "Kjører testTableSorting" << std::endl;
 	int precentages[20] = {};
 	randomizeArray(precentages, 20);
+	std::cout << "Generert array m. 20 elementer:" << std::endl;
 	printArray(precentages, 20);
 	swapNumbers(&precentages[0], &precentages[1]);
 	printArray(precentages, 20);
-	std::cout << medianOfArray(precentages, 20) << std::endl;
 	sortArray(precentages, 20);
 	printArray(precentages, 20);
+	std::cout << "Median til array-en" << std::endl;
 	std::cout << medianOfArray(precentages, 20) << std::endl;
 }
 
 //task4
 void testCStrings() {
+	std::cout << "Kjører testCStrings()" << std::endl;
 	double theSum = 0;
 	double theAverage = 0.0;
 	int gradeCount[6] = {};
@@ -66,6 +69,7 @@ void testCStrings() {
 			theSum += gradeCount[i - 1] * i;
 		}
 	}
+	std::cout << "Printer ut gjennomsnittskarakteren som tall og bokstav" << std::endl;
 	theAverage = theSum / (8 * 5);
 	std::fixed;
 	std::cout << std::setprecision(2) << theAverage << " : " << static_cast<char>('A' + (round(theAverage) - 1)) << std::endl;
@@ -74,7 +78,8 @@ void testCStrings() {
 	
 	theSum = 0;
 	theAverage = 0;
-	for (int y = 0; y < 5; y++) {
+	for (int y = 1; y < 6; y++) {
+		std::cout << "Skriv inn de 8 karakteren du fikk " << y << ". år." << std::endl;
 		readInputToCString(grades, 8);
 		std::cout << grades << std::endl;
 		for (int i = 0; i < 6; i++) {
@@ -84,6 +89,7 @@ void testCStrings() {
 			theSum += gradeCount[i - 1] * i;
 		}
 	}
+	std::cout << "SNitt karakteren din ble:" << std::endl;
 	theAverage = theSum / (8*5);
 	std::cout << std::setprecision(2) << theAverage << " : " << static_cast<char>('A' + (theAverage-1)) << std::endl;
 }

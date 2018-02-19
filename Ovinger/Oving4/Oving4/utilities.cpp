@@ -41,7 +41,7 @@ void printArray(int array[], int length) {
 
 int randomWithLimits(int lowerLimit, int upperLimit) {
 	assert(lowerLimit < upperLimit);
-	int range = abs(upperLimit - lowerLimit)+1; // SPør Studass om hvorfor må legge til 1 i range for å få med upper limit
+	int range = abs(upperLimit - lowerLimit)+1; // Spør Studass om hvorfor må legge til 1 i range for å få med upper limit
 	return (std::rand() % range) + lowerLimit;
 }
 
@@ -85,7 +85,7 @@ void randomizeCString(char array[], int length, char lowestChar, char highetsCha
 void readInputToCString(char array[], int amount) {
 	for (int i = 0; i < amount; i++) {
 		char toInput = 0;
-		while ((toupper(toInput) < 'A') || (toupper(toInput) > 'F')) {
+		while ((toupper(toInput) < 'A') || (toupper(toInput) > 'Fa')) {
 			std::cin >> toInput;
 			toInput = toupper(toInput);
 		}
